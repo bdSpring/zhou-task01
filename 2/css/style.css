@@ -112,7 +112,7 @@ header .row {
 aside {
 	position: relative;
 	margin-top: 20px;
-	padding: 20px 20px 50px 20px;
+	padding: 20px 20px 30px 20px;
 	-webkit-box-shadow: 1px 1px 1px #848484;  
   	-moz-box-shadow: 1px 1px 1px #848484;  
   	box-shadow: 1px 1px 1px #848484; 
@@ -138,6 +138,10 @@ aside h1:before{
 .box-h {
 	height: 60px;
 }
+.box-h2 {
+	height: 100px;
+	margin-bottom: 20px;
+}
 .input-box .tip {
 	position: absolute;
 	top: 15px;
@@ -147,8 +151,8 @@ aside h1:before{
 }
 .input-box .input-text {
 	position: absolute;
-	left: 300px;
-	width: 150px;
+	left: 270px;
+	width: 180px;
 	text-align: right;
 }
 .input-box .input-pos {
@@ -160,12 +164,22 @@ aside h1:before{
 	font-weight: bold;
 }
 .sub-btn {
-	display: block;
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #3355D0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
 }
 /******footer底部样式******/
 footer {
-	padding-top:20px; 
-	padding-bottom:30px; 
+	padding-top:15px; 
+	padding-bottom:25px; 
 	overflow: hidden;
 	text-align: center;
 	color: #FFFFFF;

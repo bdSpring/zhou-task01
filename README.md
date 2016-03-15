@@ -7,3 +7,6 @@
 
 任务二：零基础HTML及CSS编码（一）
 
+* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/2/index.html
+* Demo地址：http://zhoufry.applinzi.com/ife/task1/2/
+
