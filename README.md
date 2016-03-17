@@ -7,11 +7,11 @@
 
 任务二：零基础HTML及CSS编码（一）
 
-* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/2/index.html
+* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/2/
 * Demo地址：http://zhoufry.applinzi.com/ife/task1/2/
 
 任务三：三栏式布局
-* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/3/index.html
+* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/3/
 * Demo地址：http://zhoufry.applinzi.com/ife/task1/3/
 
 任务四：定位和居中问题
