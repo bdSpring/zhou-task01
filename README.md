@@ -13,3 +13,7 @@
 任务三：三栏式布局
 * 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/3/index.html
 * Demo地址：http://zhoufry.applinzi.com/ife/task1/3/
+
+任务四：定位和居中问题
+* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/4/index.html
+* Demo地址：http://zhoufry.applinzi.com/ife/task1/4/
