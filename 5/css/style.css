@@ -160,22 +160,22 @@ aside h1:before{
 .input-box .tip {
 	position: absolute;
 	top: 15px;
-	left: 150px;
+	left: 180px;
 	font-size: 14px;
 	color: #CECDC8;
 }
 .input-box .input-text {
 	position: absolute;
-	left: -30px;
+	left: 0;
 	width: 180px;
 	text-align: right;
 }
 .input-box .input-pos {
 	position: absolute;
-	left: 150px;
+	left: 180px;
 }
 .input-box .person-text {
-	width: 220px;
+	width: 200px;
 	height: 100px;
 	font-size: 18px;
 	font-weight: bold;
