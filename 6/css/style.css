@@ -2,6 +2,7 @@
 body,
 h1,
 h2,
+h4,
 p,
 i,
 strong,
@@ -217,12 +218,10 @@ header time {
 /********文章内容样式********/
 .article-content {
 	padding-top: 50px;
-	border: 1px solid black;
 }
 .article-intro {
 	float: left;
 	width: 415px;
-	border: 1px solid blue;
 }
 .article-intro h1 {
 	font-size: 42px;
@@ -271,14 +270,42 @@ header time {
 }
 .article-intro .art-img {
 	float: right;
-	padding: 20px 0 20px 20px;
+	padding: 15px 0 10px 20px;
 }
 .article-img {
+	position: relative;
 	float: right;
 	width: 458px;
-	border: 1px solid red;
 }
-.article-img .art-img2:after {
+.article-img h3 {
+	position: absolute;
+	top: 186px;
+	left: 50px;
+	font-size: 26px;
+	color: #ffffff;
+	z-index: 999;
+}
+.article-img h3 span {
+	margin-left: 10px;
+	font-size: 12px;
+	letter-spacing: 140%;
+	font-family: "微软雅黑";
+	font-style: oblique;
+	color: #72b16a;
+}
+.article-img h3:after {
+	content: "";
+	position: absolute;
+	top: -7px;
+	left: -15px;
+	display: block;
+	width: 3px;
+	height: 44px;
+	background-color: #72b16a;
+}
+.article-img:after {
+	position: absolute;
+	top: 196px;
 	display: block;
 	content: "";
 	width: 458px;
@@ -288,6 +315,117 @@ header time {
     -moz-opacity:0.7;  
     -khtml-opacity: 0.7;  
     opacity: 0.7; 
+}
+.art-note {
+	margin-top: 40px;
+	width: 459px;
+	height: 328px;
+	background-color: #EEEED6;
+}
+.art-note ul {
+	padding-top: 30px;
+	list-style-type: none;
+	font-size: 12px;
+	font-family: "宋体";
+}
+.art-note ul li {
+	position: relative;
+	line-height: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+.art-note ul li:before {
+	position: absolute;
+	top: 6px;
+	left: -13px;
+	content: "";
+	width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #0E4473;
+}
+.art-note ul li h4 {
+	display: inline-block;
+}
+.art-note ul li span {
+	font-style: oblique;
+}
+.art-note .num-box {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 260px;
+	height: 160px;
+	background-color: #D55D5C;
+}
+.art-note .num-box span {
+	position: relative;
+	margin-top: 5px;
+	margin-left: 5px;	
+	font-size: 110px;
+	font-family: "微软雅黑";
+	color: #ffffff;
+}
+.art-note .num-box span:after {
+	position: absolute;
+	top: 32px;
+	left:70px;
+	content: "";
+	width: 2px;
+	height: 86px;
+	background-color: #ffffff;
+}
+.art-note .num-box .box-content {
+	position: absolute;
+	top: 40px;
+	left: 85px;;
+}
+.art-note .box-content h4 {
+	line-height: 24px;
+	font-size: 21px;
+	font-family: "黑体";
+	font-style: oblique;
+	color: #ffffff;
+}
+.art-note .box-content p {
+	padding-right: 10px;
+	font-size: 12px;
+	font-family: "黑体";
+	color: #ffffff;
+}
+.art-note .long-text {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 180px;
+	height: 160px;
+}
+.art-note .long-text p {
+	text-indent: 3em;
+	position: relative;
+	top: 20px;
+	line-height: 16px;
+	font-size: 14px;
+	font-family: "黑体";
+	font-style: oblique;
+	color: #5a5b5b;
+}
+.art-note .long-text p .first-quotes {
+	position: absolute;
+	top: 15px;
+	left: -90px;
+	font-size: 72px;
+	font-family: "黑体";
+	color: #d45d5c;
+}
+.art-note .long-text p .last-quotes {
+	position: absolute;
+	top: 125px;
+	left: 70px;
+	font-size: 72px;
+	font-family: "黑体";
+	color: #d45d5c;
 }
 /********footer底部样式********/
 footer {

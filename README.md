@@ -21,3 +21,7 @@
 任务五：零基础HTML及CSS编码（二）
 * 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/5/
 * Demo地址：http://zhoufry.applinzi.com/ife/task1/5/
+
+任务六：通过HTML及CSS模拟报纸排版
+* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/6/
+* Demo地址：http://zhoufry.applinzi.com/ife/task1/6/
