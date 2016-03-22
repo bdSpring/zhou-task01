@@ -1,0 +1,190 @@
+/*****reset*****/
+body,
+div,
+table {
+	margin: 0;
+	padding: 0;
+}
+/*****全局通用样式*****/
+.row {
+	width: 90%;
+	margin: 0 auto;
+}
+body {
+	font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+}
+/******header头部样式******/
+header {
+	background-color: #333333;
+}
+header .row {
+	position: relative;
+	height: 60px;
+}
+.nav-logo {
+	display: table-cell;
+	vertical-align: middle;
+	width: 150px;
+	height: 60px;
+	text-align: center;
+}
+.navbar {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.navbar li {
+	float: left;
+	margin-right: 25px;
+}
+.navbar li a {
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.navbar li a:hover {
+	color: #858688;
+}
+
+/******container主体样式******/
+.container {
+	padding-bottom: 20px;
+	overflow: hidden;
+	background-color: #DEDEDE;
+}
+.container article {
+	margin-top: 20px;
+	padding: 20px 20px;
+	-webkit-box-shadow: 1px 1px 1px #848484;  
+  	-moz-box-shadow: 1px 1px 1px #848484;  
+  	box-shadow: 1px 1px 1px #848484; 
+	background-color: #FFFFFF;
+	border: 1px solid #CDCDCD;
+}
+.container article h2 {
+	font-size: 18px;
+	color: #5F5E5A;
+}
+.container article span {
+	font-size: 14px;
+	color: #5F5E5A;
+}
+.container article p {
+	line-height: 150%;
+	text-indent: 2em;
+}
+.container article ul {
+	list-style-type: none;
+}
+.container article figure {
+	width: 200px;
+	height: 170px;
+	padding: 0 10px 10px 10px;
+	text-align: center;
+	border: 1px solid #CECECE;
+}
+.container article figure p {
+	text-indent: 0;
+}
+.container article figure img {
+	width: 100%;
+}
+.article-table {
+	width: 100%;
+	text-align: left;
+	border-collapse:collapse;
+}
+.article-table th {
+	padding: 5px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #333333;
+	border: 1px solid #CECECE;
+}
+.article-table td {
+	padding: 5px;
+	border: 1px solid #CECECE;
+}
+.article-table tr:last-child {
+	font-weight: bold;
+	background-color: #CCCCCC;
+}
+aside {
+	position: relative;
+	margin-top: 20px;
+	padding: 20px 20px 30px 20px;
+	-webkit-box-shadow: 1px 1px 1px #848484;  
+  	-moz-box-shadow: 1px 1px 1px #848484;  
+  	box-shadow: 1px 1px 1px #848484; 
+	background-color: #FFFFFF;
+	border: 1px solid #CDCDCD;
+}
+aside h1 {
+	font-size: 18px;
+	padding-left: 20px;
+}
+aside h1:before{
+	position: relative;
+	left: -15px;
+	content: "";
+	padding-left: 3px;
+	background-color: #CCCCCC;
+}
+.input-box {
+	position: relative;
+	height: 20px;
+	margin-bottom: 10px;
+}
+.box-h {
+	height: 60px;
+}
+.box-h2 {
+	height: 100px;
+	margin-bottom: 20px;
+}
+.input-box .tip {
+	position: absolute;
+	top: 15px;
+	left: 460px;
+	font-size: 14px;
+	color: #CECDC8;
+}
+.input-box .input-text {
+	position: absolute;
+	left: 270px;
+	width: 180px;
+	text-align: right;
+}
+.input-box .input-pos {
+	position: absolute;
+	left: 460px;
+}
+.input-box textarea {
+	font-size: 18px;
+	font-weight: bold;
+}
+.sub-btn {
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #3355D0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+/******footer底部样式******/
+footer {
+	padding-top:15px; 
+	padding-bottom:25px; 
+	overflow: hidden;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+footer p {
+	font-size: 12px;
+}
