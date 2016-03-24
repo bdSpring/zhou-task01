@@ -2,17 +2,23 @@
 body,
 div,
 header,
+figure,
 nav,
 h1,
 h2,
-a {
+h3,
+h4,
+p,
+a,
+ul {
 	margin: 0;
 	padding: 0;
 }
 /*************header头部样式*************/
 .header-wrap {
-	margin: 0 auto;
-	width: 1280px;
+	margin-left: 60px;
+	margin-right: 60px;
+	min-width: 1280px;
 	height: 52px;
 }
 .header-title {
@@ -61,9 +67,9 @@ a {
 .banner {
 	min-width: 1280px;
 	height: 690px;
-	background: url(../img/banner.jpg) no-repeat;
-	-moz-background-size:100% 100%;
-	background-size:100% 100%;
+	background: url(../img/banner.jpg) no-repeat center center;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 .banner-wrap {
 	position: relative;
@@ -104,8 +110,270 @@ a {
 /************container样式**************/
 .container {
 	margin: 0 auto;
-	width: 1280px;
+	margin-left: 60px;
+	margin-right: 60px;
+	min-width: 1280px;
 }
 .intro-list {
+	height: 250px;
+	list-style-type: none;
+	background-color: #ffffff;
+
+}
+.intro-list li {
+	float: left;
+	width: 25%;
+	height: 250px;
+	text-align: center;
+}
+.intro-list li:after {
+	position: relative;
+	top: -30px;
+	display: block;
+	content: "";
+	width: 2px;
+	height: 50px;
+	background-color: #828383;
+}
+.intro-list li:first-child:after {
+	display: none;
+}
+.intro-list li img {
+	margin-top: 45px;
+}
+.intro-list li p {
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 155px;
+	font-size: 14px;
+	font-family: "黑体";
+	color: #767777;
+}
+.poster {
+	background-color: #EDEDED;
+}
+.poster-wrap {
+	margin: 0 auto;
+	width: 1280px;
+	height: 360px;
+	text-align: center;
+	background: url(../img/poster-logo.jpg) no-repeat center 90px #EDEDED;
+}
+.poster h1 {
+	padding-top: 230px;
+	font-size: 54px;
+	font-weight: 100;
+	font-family: "黑体";
+	color: #A1A1A1;
+}
+.city-search {
+	position: relative;
+	min-width: 1280px;
+	height: 340px;
+	text-align: center;
+	background: url(../img/poster-bg.jpg) no-repeat center center;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.city-search:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 340px;
+	filter:alpha(opacity=20);  
+    -moz-opacity:0.2;  
+    -khtml-opacity: 0.2;  
+    opacity: 0.2; 
+	background-color: #BE4E48;
+}
+.city-wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+.city-search h2 {
+	padding-top: 55px;
+	margin-bottom: 35px;
+	font-size: 21px;
+	font-weight: 100;
+	font-family: "微软雅黑";
+	color: #ffffff;
+	z-index: 999;
+}
+.city-search h2:after {
+	margin: 0 auto;
+	margin-top: 10px;
+	display: block;
+	content: "";
+	width: 30px;
+	height: 3px;
+	background-color: #ffffff;
+}
+.city-search p {
+	margin-bottom: 55px;
+	font-size: 12px;
+	font-weight: 100;
+	font-family: "微软雅黑";
+	color: #ffffff;	
+}
+
+.city-search select {
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	margin-right: 30px;
+	padding: 5px 10px 5px 10px;
+	width: 235px;
+	height: 35px;
+	color: #B9BBBB;
+	cursor: pointer;
+	/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+	border: solid 1px #FFFFFF;
+
+	/*在选择框的最右侧中间显示小箭头图片*/
+	background: url(../img/arrow.jpg) no-repeat scroll 205px center #FFFFFF;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { 
+	display: none; 
+}
+.city-search select option {
+	display: block;
+	width: 200px;
+	height: 45px;
+	color: #FFFFFF;
+	background-color: #BE4F48;
+	cursor: pointer;
+}
+.city-search button {
+	width: 235px;
+	height: 35px;	
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-indent: 20px;
+	letter-spacing: 20px;
+	color: #ffffff;
+	background-color: #BE4E48;
+	border: 0;
+	cursor: pointer;
+}
+.sh-activity {
+	min-width: 1280px;
+	height: 600px;
+	text-align: center;
+	background-color: #F8F7F7;
+}
+.sh-activity .area-poster {
+	margin: 0 auto;
+	padding-top: 100px;
+	width: 1280px;
+	overflow: hidden;
+}
+.sh-activity figure {
+	float: left;
+	width: 25%;
+}
+.sh-activity figure img {
+	padding: 10px 5px 10px 5px;
+	background-color: #ffffff;
+	border: 1px solid #E4E4E4;
+}
+.sh-activity figure h3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #737474;
+}
+.sh-activity figure p {
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #AFAFAF;
+}
+.sh-text {
+	text-indent: 40px;
+	letter-spacing: 40px;
+}
+.bj-world {
+	margin: 0 auto;
+	min-width: 1280px;
+	height: 565px;
+}
+.bj-world .img-show {
+	float: left;
+	width: 63%;
+	height: 565px;
+	text-align: center;
+	background: url(../img/bj-time.jpg) no-repeat center center;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.bj-world .img-show h1 {
+	margin-top: 125px;
+	font-size: 50px;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	color: #ffffff;
+}
+.bj-world .img-show h2 {
+	margin-top: -40px;
+	font-size: 158px;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	color: #ffffff;
+}
+.bj-world .img-show p {
+	margin-bottom: 10px;
+	font-size: 21px;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	color: #ffffff;
+}
+.bj-world .img-show time {
+	font-size: 21px;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	color: #ffffff;
+}
+.bj-world .intro {
+	float: left;
+	width: 37%;
+	height: 565px;
+	text-align: center;
+}
+.bj-world .intro h4 {
+	margin-top: 165px;
+	margin-bottom: 30px;
+	font-size: 24px;
+	font-weight: 400;
+	font-family: "微软雅黑";
+}
+.bj-world .intro h4 i {
+	margin-right: 5px;
+}
+.bj-world .intro h4 span {
+	color: #E74F4D;
+}
+.bj-world .intro p {
+	margin: 0 auto;
+	width: 290px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: "微软雅黑";
+	line-height: 200%;
+	text-align: justify;
+	color: #BABABA;
+}
+.our-life {
+	height: 520px;
+}
+.our-life {
 	
 }
