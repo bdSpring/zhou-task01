@@ -683,6 +683,13 @@ footer {
 	background-color: #6F7178;
 	border: 0;
 }
+.social {
+	margin-top: 35px;
+	text-align: center;
+}
+.social img {
+	margin: 0 5px;
+}
 .copyright {
 	padding: 0 30px;
 	min-width: 1280px;
