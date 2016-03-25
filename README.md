@@ -25,3 +25,7 @@
 任务六：通过HTML及CSS模拟报纸排版
 * 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/6/
 * Demo地址：http://bdSpring.github.io/zhou-task01/6/index.html
+
+任务七：实现常见的技术产品官网的页面架构及样式布局
+* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/7/
+* Demo地址：http://bdSpring.github.io/zhou-task01/7/index.html
