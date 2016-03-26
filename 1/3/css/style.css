@@ -1,0 +1,65 @@
+/*******reset*******/
+body,
+div,
+h1 {
+	margin: 0;
+	padding: 0;
+}
+/*******全局通用样式*******/
+body {
+	padding: 20px;
+	font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+}
+/*******主体样式*******/
+.container {
+	padding: 20px 160px 20px 240px;
+	min-width: 210px;
+	max-height: 100%;
+	background-color: #eee;
+	border: 1px solid #999;
+	overflow: hidden;
+}
+.team-intro {
+	float: left;
+	width: 100%;
+	background-color: #FFF;
+	border: 1px solid #999;
+}
+.team-intro .intro-wrap {
+	padding: 20px;
+}
+.team-intro h1 {
+	font-size: 18px;
+}
+.team-name {
+	position: relative;
+	left: -220px;
+	float: left;
+	width: 200px;
+	margin-left: -100%;
+	background-color: #FFF;
+	border: 1px solid #999;
+}
+.team-name h1 {
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 14px;
+}
+.team-name img {
+	margin: 20px;
+}
+.team-member {
+	position: relative;
+	right: -140px;
+	float: left;
+	width: 120px;
+	padding-top: 20px;
+	margin-left: -124px;
+	text-align: center;
+	background-color: #FFF;
+	border: 1px solid #999;
+}
+.team-member img {
+	margin-bottom: 20px;
+}
