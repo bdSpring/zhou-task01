@@ -29,3 +29,7 @@
 任务七：实现常见的技术产品官网的页面架构及样式布局
 * 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/7/
 * Demo地址：http://bdSpring.github.io/zhou-task01/7/index.html
+
+任务八：响应式网格（栅格化）布局
+* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/8/
+* Demo地址：http://bdSpring.github.io/zhou-task01/8/index.html
