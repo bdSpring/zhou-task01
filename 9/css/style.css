@@ -11,10 +11,14 @@ h4,
 p,
 a,
 ul,
+li,
 textarea,
 input {
 	margin: 0;
 	padding: 0;
+}
+ul {
+	list-style-type: none;
 }
 .clearfix:after {
 	content: "."; 
@@ -25,6 +29,9 @@ input {
 }
 .clearfix { 
 	*zoom:1; 
+}
+html,body {
+	height: 100%;
 }
 /*************头部样式*************/
 header {
@@ -77,3 +84,89 @@ header {
 	background: url(../img/user.jpg) no-repeat ;
 }
 /*************侧边栏样式*************/
+.container {
+	height: 100%;
+}
+aside {
+	width: 260px;
+	height: 100%;
+	background-color: #2A2E3D;
+}
+.aside-header {
+	padding-top: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.aside-header .avatar {
+	margin-right: 10px;
+	vertical-align: middle;
+	font-size: 0;
+}
+.aside-header .nick {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-family: "黑体";
+	color: #f6f5f5;
+}
+.user-data {
+	margin-top: 25px;
+}
+.user-data li {
+	float: left;
+	width: 70px;
+	text-align: center;
+}
+.user-data li:first-child {
+	border-right: 2px solid #323646;
+}
+.user-data .field {
+	display: block;
+	font-size: 12px;
+	font-family: "宋体";
+	color: #6e8095;
+}
+.user-data .num {
+	display: block;
+	font-size: 16px;
+	font-family: "黑体";
+	color: #6e8095;
+}
+.menu {
+	margin-top: 20px;
+
+}
+.menu li {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.menu > li {
+	padding-top: 10px;
+	padding-left: 45px;
+	padding-bottom: 10px;
+}
+.menu li img {
+	margin-right: 5px;
+}
+.menu > li > img {
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.menu li a {
+	font-size: 12px;
+	font-family: "黑体";
+	color: #6e8095;
+	text-decoration: none;
+}
+.menu .active {
+	background-color: #393D4E;
+}
+.menu .active a {
+	color: #D2D2D6;
+}
+.menu > li > ul {
+	padding-left: 25px;
+}
+.menu > li > ul > ul {
+	padding-left: 35px;
+}
