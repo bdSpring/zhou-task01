@@ -1,0 +1,79 @@
+/*************reset*************/
+body,
+div,
+header,
+figure,
+nav,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul,
+textarea,
+input {
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	visibility:hidden;
+	clear: both; 
+}
+.clearfix { 
+	*zoom:1; 
+}
+/*************头部样式*************/
+header {
+	height: 55px;
+	background-color: #2189BF;
+}
+.header-inner {
+	padding-left: 50px;
+	padding-right: 50px;
+	height: 55px;
+}
+.header-inner .logo-img {
+	margin-top: 10px;
+}
+.header-inner .search-box {
+	float: right;
+	margin-top: 13px;
+	margin-right: 40px;
+	padding-left: 30px;
+	width: 285px;
+	height: 30px;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+	border-radius: 15px;
+	background: url(../img/search.jpg) no-repeat 8px center #ffffff;
+	border: 0;
+	outline: 0;
+}
+.header-inner .login-text {
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin-top: 20px;
+	width: 30px;
+	height: 15px;
+	font-size: 12px;
+	font-family: "黑体";
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+}
+.header-inner .login-text:after {
+	position: absolute;
+	top: 0;
+	left: -15px;
+	display: block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(../img/user.jpg) no-repeat ;
+}
+/*************侧边栏样式*************/
