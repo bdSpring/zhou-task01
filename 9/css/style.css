@@ -35,6 +35,7 @@ html,body {
 }
 /*************头部样式*************/
 header {
+	min-width: 1280px;
 	height: 55px;
 	background-color: #2189BF;
 }
@@ -85,7 +86,8 @@ header {
 }
 /*************侧边栏样式*************/
 .container {
-	height: 100%;
+	min-width: 1280px;
+	min-height: 100%;
 }
 aside {
 	float: left;
@@ -352,4 +354,95 @@ aside {
 }
 .history-search .active {
 	border-top: 3px solid #4388C8;
+}
+/*************内容区-统计区样式*************/
+.content > h2 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	padding-left: 65px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+.count {
+	margin-left: 65px;
+	width: 950px;
+	height: 70px;
+}
+.count li {
+	position: relative;
+	float: left;
+	margin-right: 25px;
+	width: 200px;
+	height: 70px;
+	border: 2px solid #E2E3E4;
+	background-color: #ffffff;
+}
+.count li span {
+	position: absolute;
+	font-family: "黑体";
+}
+.count .count-num {
+	top: 20px;
+	left: 10px;
+	font-size: 12px;
+	color: #323333;
+}
+.count .count-text {
+	top: 40px;
+	left: 10px;
+	font-size: 10px;
+	color: #939494;
+}
+.count .color-block {
+	float: right;
+	margin-top: 12px;
+	margin-right: 12px;
+	width: 60px;
+	height: 45px;
+}
+.count .count-green {
+	border-left: 3px solid #48B49F;
+}
+.count .count-green .color-block {
+	background-color: #48B49F;
+}
+.count .count-blue {
+	border-left: 3px solid #388AC1;
+}
+.count .count-blue .color-block {
+	background-color: #388AC1;
+}
+.count .count-red {
+	border-left: 3px solid #D04A36;
+}
+.count .count-red .color-block {
+	background-color: #D04A36;
+}
+.count .count-yellow {
+	border-left: 3px solid #E1CC46;
+}
+.count .count-yellow .color-block {
+	background-color: #E1CC46;
+}
+/*************内容区-第一组项目区样式*************/
+.one-project-list {
+	margin-top: 20px;
+	margin-left: 65px;
+	width: 535px;
+	height: 360px;
+	border: 2px solid #DADCDD;
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+.title {
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	font-family: "黑体";
+	color: #B9B9B9;
+	background-color: #F3F5F6;
+	border-bottom: 1px solid #DADCDD;
+	border-radius: 10px 10px 0 0;
 }
