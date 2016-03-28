@@ -88,6 +88,7 @@ header {
 	height: 100%;
 }
 aside {
+	float: left;
 	width: 260px;
 	height: 100%;
 	background-color: #2A2E3D;
@@ -155,13 +156,13 @@ aside {
 .menu li a {
 	font-size: 12px;
 	font-family: "黑体";
-	color: #6e8095;
+	color: #5C6A7D;
 	text-decoration: none;
 }
 .menu .active {
 	background-color: #393D4E;
 }
-.menu .active a {
+.menu .active-text {
 	color: #D2D2D6;
 }
 .menu > li > ul {
@@ -169,4 +170,186 @@ aside {
 }
 .menu > li > ul > ul {
 	padding-left: 35px;
+}
+/*************内容区-面包条导航样式*************/
+.content {
+	box-sizing: border-box;
+	padding-left: 260px;	
+	width: 100%;
+	height: 100%;
+	background-color: #EEEEED;
+}
+.content .bread-nav {
+	padding-left: 25px;
+	height: 30px;
+	background-color: #ffffff;
+}
+.content .bread-nav a {
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 12px;
+	font-family: "黑体";
+	text-align: center;
+	color: #BDBDBD;
+	text-decoration: none;
+}
+.content .bread-nav a:before {
+	position: absolute;
+	top: 0;
+	left: -12px;
+	content: "/";
+	display: inline-block;
+}
+.content .bread-nav a:first-child:before {
+	display: none;
+}
+.content .bread-nav .active {
+	color: #90B2D1;
+}
+/*************内容区-顶部搜索区样式*************/
+.content .search-box {
+	margin-top: 20px;
+	margin-left: 65px;
+	width: 890px;
+	height: 90px;
+	background-color: #ffffff;
+	border: 1px solid #E2E3E4;
+}
+.content .search-box ul {
+	float: left;
+	margin-left: 40px;
+	padding-top: 15px;
+	height: 75px;
+}
+.content .search-box ul li {
+	margin-bottom: 5px;
+}
+.content .search-box span {
+	font-size: 12px;
+	font-family: "黑体";
+	color: #BDBDBD;
+}
+.content .search-box select {
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	padding-left: 10px;
+	height: 25px;
+}
+.content .search-box select option {
+	font-size: 12px;
+	font-family: "黑体";
+}
+.content .search-box .select-s1 {
+	width: 125px;
+	background: url(../img/select_black.jpg) no-repeat 105px center;
+}
+.content .search-box .select-s2 {
+	width: 70px;
+	background: url(../img/select_black.jpg) no-repeat 53px center;
+}
+.content .search-box .search-term select {
+	width: 70px;
+	background: url(../img/select_blue.jpg) no-repeat 53px center;
+}
+.content .search-box .search-sale {
+	width: 190px;
+}
+.content .search-box .search-sale li {
+	float: left;
+}
+.content .search-box .search-sale li:last-child {
+	margin-top: -22px;
+}
+.content .search-box button {
+	margin-top: 30px;
+	margin-left: 35px;
+	width: 50px;
+	height: 25px;
+	font-size: 12px;
+	font-family: "黑体";
+	color: #ffffff;
+	background-color: #388AC1;
+	border: 0;
+	cursor: pointer;
+}
+/*************内容区-历史查询区样式*************/
+.history-search {
+	margin-top: 20px;
+	margin-left: 65px;
+	width: 891px;
+	height: 65px;
+}
+.history-search li {
+	float: left;
+	margin-right: 4px;
+	width: 110px;
+	height: 65px;
+	text-align: center;
+	border-top: 1px solid #CFD2D5;
+	border-left: 1px solid #CFD2D5;
+	background-color: #ffffff;
+}
+.history-search li time {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+	font-family: "微软雅黑";
+}
+.history-search li .rmb-num {
+	font-size: 21px;
+	font-family: "微软雅黑";
+	color: #ED711A;
+}
+.history-search li .rmb-num:before {
+	display: inline-block;
+	content: "￥";
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: 700;
+	color: #ADADAD;
+}
+.history-search > a {
+	float: left;
+	display: inline-block;
+	margin-right: 4px;
+	width: 30px;
+	height: 65px;
+	line-height: 65px;
+	font-size: 28px;
+	color: #C1C1C1;
+	text-align: center;
+	text-decoration: none;
+	border-top: 1px solid #CFD2D5;
+	border-left: 1px solid #CFD2D5;
+	background-color: #ffffff;
+}
+.history-search .history-box {
+	float: left;
+	width: 130px;
+	height: 65px;
+	border-top: 1px solid #CFD2D5;
+	border-left: 1px solid #CFD2D5;
+	background-color: #ffffff;
+}
+.history-search .history-box img {
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.history-search .history-box a {
+	display: inline-block;
+	margin-top: 25px;
+	margin-left: 10px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	color: #7E7E7E;
+	text-decoration: none;
+}
+.history-search .active {
+	border-top: 3px solid #4388C8;
 }
