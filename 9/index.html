@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>任务九：使用HTML/CSS实现一个复杂页面</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="header-inner">
+			<img src="img/logo.jpg" alt="logo" class="logo-img">
+			<a href="" class="login-text">登录</a>
+			<input type="text" class="search-box">
+		</div>	
+	</header>
+	<div class="container">
+		<aside>
+			<div class="aside-header">
+				<img src="img/avatar.jpg" alt="头像" class="avatar"> <span class="nick">Zhoujw</span>
+				<ul class="user-data clearfix">
+					<li>
+						<span class="num">111</span>
+						<span class="field">收藏</span>
+					</li>
+					<li>
+						<span class="num">313</span>
+				 		<span class="field">粉丝</span>
+					</li>
+				</ul> 
+			</div>
+			
+			<ul class="menu">
+				<li class="active">
+					<img src="img/form.jpg" alt="" ><a href="" class="active-text">个人报表</a>
+					<ul>
+						<li><img src="img/arrow_off.jpg" alt=""><img src="img/file.jpg" alt=""><a href="">文件一</a></li>
+					</ul>
+					<ul>
+						<li><img src="img/arrow_on.jpg" alt=""><img src="img/file_on.jpg" alt=""><a href="" class="active-text">文件二</a></li>
+						<ul>
+							<li><img src="img/doc_click.jpg" alt=""><a href="" class="active-text">文档一</a></li>
+							<li><img src="img/doc.jpg" alt=""><a href="">文档二</a></li>
+						</ul>
+					</ul>
+					<ul>
+						<li><img src="img/arrow_off.jpg" alt=""><img src="img/file.jpg" alt=""><a href="">文件三</a></li>
+					</ul>
+				</li>
+				<li><img src="img/collect.jpg" alt=""><a href="">个人收藏</a></li>
+				<li><img src="img/share.jpg" alt=""><a href="">我的分享</a></li>
+				<li><img src="img/collect.jpg" alt=""><a href="">图库</a></li>
+				<li><img src="img/collect.jpg" alt=""><a href="">成长记录</a></li>
+				<li><img src="img/account.jpg" alt=""><a href="">账户信息</a></li>
+			</ul>
+		</aside>
+		
+		<div class="content">
+			<nav class="bread-nav">
+				<a href="">c站</a>
+				<a href="">个人报表</a>
+				<a href="">文件一</a>
+				<a href="" class="active">文档一</a>
+			</nav>
+
+			<div class="search-box">
+				<ul class="search-term ">
+					<span>查询项</span>
+					<select><option value="第一项">第一项</option></select>
+				</ul>
+				<ul class="search-sale">
+					<li>
+						<span>买方</span>
+						<select class="select-s1"><option value="小A">小A</option></select>
+					</li>
+					<li>
+						<span>卖方</span>
+						<select class="select-s1"><option value="小C">小C</option></select>
+					</li>
+					<li><img src="img/change.jpg" alt=""></li>
+				</ul>
+				<ul class="search-date">
+					<li>
+						<span>日期</span>
+						<select class="select-s1"><option value="2016-04-01">2016-04-01</option></select>
+						<span>总耗时</span>
+						<select class="select-s2"><option value="8天">8天</option></select>
+					</li>
+					<li>
+						<span>人数</span>
+						<select class="select-s2"><option value="10人">10人</option></select>
+						<span>成交项</span>
+						<select class="select-s1"><option value="10项">10项</option></select>
+					</li>
+				</ul>
+				<button>搜索</button>
+			</div>
+			
+			<ul class="history-search">
+				<a href=""><</a>
+				<li class="active">
+					<time>10:00 am</time>
+					<span class="rmb-num">1200</span>
+				</li>
+				<li>
+					<time>11:00 am</time>
+					<span class="rmb-num">1300</span>
+				</li>
+				<li>
+					<time>12:00 am</time>
+					<span class="rmb-num">1200</span>
+				</li>
+				<li>
+					<time>01:00 pm</time>
+					<span class="rmb-num">1400</span>
+				</li>
+				<li>
+					<time>02:00 pm</time>
+					<span class="rmb-num">1500</span>
+				</li>
+				<li>
+					<time>03:00 pm</time>
+					<span class="rmb-num">1800</span>
+				</li>
+				<a href="">></a>
+				<div class="history-box">
+					<img src="img/history_search.jpg" alt="">
+					<a href="">历史查询</a>
+				</div>
+			</ul>
+			
+			<h2>2016年4月份统计</h2>
+			<ul class="count">
+				<li class="count-green">
+					<span class="count-num">133311</span>
+					<span class="count-text">成交量</span>
+					<div class="color-block"></div>
+				</li>
+				<li class="count-blue">
+					<span class="count-num">133311</span>
+					<span class="count-text">成交量</span>
+					<div class="color-block"></div>
+				</li>
+				<li class="count-red">
+					<span class="count-num">133311</span>
+					<span class="count-text">成交量</span>
+					<div class="color-block"></div>
+				</li>
+				<li class="count-yellow">
+					<span class="count-num">133311</span>
+					<span class="count-text">成交量</span>
+					<div class="color-block"></div>
+				</li>
+				</li>
+			</ul>
+			
+			<div class="one-project clearfix">
+				<div class="one-project-list">
+					<h2 class="title">第一组项目</h2>
+					<ul class="pro-tab clearfix">
+						<li class="active">项目一</li>
+						<li>项目一</li>
+						<li>项目一</li>
+						<li>项目一</li>
+						<li>项目一</li>
+					</ul>
+					<div class="pro-show">
+						<table>
+							<tr><td>购买材料一</td><td>购买材料二</td><td>购买材料三</td><td>购买材料四</td></tr>
+							<tr><td>购买材料二</td><td>购买材料二</td><td>购买材料二</td><td>购买材料二</td></tr>
+							<tr><td>购买材料四</td><td>购买材料四</td><td>购买材料四</td><td>购买材料四</td></tr>
+							<tr><td>购买材料六</td><td>购买材料四</td><td>购买材料六</td><td>购买材料六</td></tr>
+							<tr><td>购买材料二十</td><td>购买材料二十</td><td>购买材料二十</td><td>购买材料二十</td></tr>
+						</table>
+					</div>
+					
+				</div>
+				<div class="one-project-search">
+					<h2 class="title">第一组项目</h2>
+					<div class="pro-title">
+						<h3>标题</h3>
+						<p>项目报表三</p>
+					</div>
+						<div class="pro-price">
+							<h3>价格</h3>
+							<p>￥158</p>
+						</div>
+						<div class="pro-person">
+							<h3>负责人</h3>
+							<p>小A</p>
+						</div>
+					<div class="pro-intro">
+						<h3>详细描述</h3>
+						<p>
+							该项目目前负责人是......
+						</p>
+					</div>
+					<input type="checkbox" checked id="agree"><label for="agree">遵守保密协议</label>
+					<button>搜索</button>
+				</div>
+			</div>
+			
+
+			<div class="one-project clearfix">
+				<div class="calendar">
+					<h2 class="title">日历</h2>
+					<div class="calender-head">
+						<select class="year">
+							<option value="2016">2016</option>
+						</select>
+						<select class="month">
+							<option value="4月">4月</option>
+						</select>
+						<select class="date">
+							<option value="标注日期">标注日期</option>
+						</select>
+						
+						<a href="">返回今天</a>
+					</div>
+					<table>
+						<tr>
+						<th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th><th>日</th></tr>
+						<tr>
+						<td></td><td></td><td></td><td></td>
+						<td><b>1</b><span class="light-day">愚人节</span></td>
+						<td><b class="light-day">2</b><span>廿五</span></td>
+						<td><b class="light-day">3</b><span>廿六</span></td>
+						</tr>
+						<tr>
+						<td><b>4</b><span>廿七</span></td>
+						<td><b>5</b><span class="light-day">清明</span></td>
+						<td><b>6</b><span>廿九</span></td>
+						<td><b>7</b><span>三月</span></td>
+						<td><b>8</b><span>初二</span></td>
+						<td class="light-date "><b class="light-day">9</b><span>初三</span></td>
+						<td><b class="light-day">10</b><span>初四</span></td>
+						
+						</tr>
+						<tr>
+						<td><b>11</b><span>初五</span></td>
+						<td class="light-date"><b>12</b><span>初六</span></td>
+						<td><b>13</b><span>初七</span></td>
+						<td><b>14</b><span>初八</span></td>
+						<td><b>15</b><span>初九</span></td>
+						<td><b class="light-day">16</b><span>初十</span></td>
+						<td><b class="light-day">17</b><span>十一</span></td>
+						</tr>
+
+						<tr>
+						<td><b>18</b><span>十二</span></td>
+						<td><b>19</b><span>十三</span></td>
+						<td><b>20</b><span>十四</span></td>
+						<td><b>21</b><span>十五</span></td>
+						<td><b>22</b><span>十六</span></td>
+						<td><b class="light-day">23</b><span>十七</span></td>
+						<td><b class="light-day">24</b><span>十八</span></td>
+						</tr>
+						<tr>
+						<td><b>25</b><span>十九</span></td>
+						<td><b>26</b><span>廿十</span></td>
+						<td><b>27</b><span>廿一</span></td>
+						<td><b>28</b><span>廿二</span></td>
+						<td><b>29</b><span>廿三</span></td>
+						<td><b class="light-day">30</b><span>廿四</span></td>
+						<td></td>
+						</tr>
+					</table>
+					
+				</div>
+				<div class="car-hot">
+					<h2 class="title">汽车行业品牌榜</h2>
+					<table>
+						<tr><th class="rank">排名</th><th class="brand">品牌</th><th class="search-degree">搜索指数</th></tr>
+						<tr><td>1</td><td>大众</td><td><span>48912001</span><div class="progress-bar"><div class="degree-one"></div></div></td></tr>
+						<tr><td>2</td><td>丰田</td><td><span>29307033</span><div class="progress-bar"><div class="degree-two"></div></div></td></tr>
+						<tr><td>3</td><td>奥迪</td><td><span>23139070</span><div class="progress-bar"><div class="degree-three"></div></div></td></tr>
+						<tr><td>4</td><td>本田</td><td><span>22885564</span><div class="progress-bar"><div class="degree-normal" style="width:60%"></div></div></td></tr>
+						<tr><td>5</td><td>福特</td><td><span>22327856</span><div class="progress-bar"><div class="degree-normal" style="width:55%"></div></div></td></tr>
+						<tr><td>6</td><td>宝马</td><td><span>21446789</span><div class="progress-bar"><div class="degree-normal" style="width:50%"></div></div></td></tr>
+						<tr><td>7</td><td>现代</td><td><span>22885564</span><div class="progress-bar"><div class="degree-normal" style="width:45%"></div></div></td></tr>
+						<tr><td>8</td><td>起亚</td><td><span>19257654</span><div class="progress-bar"><div class="degree-normal" style="width:40%"></div></div></td></tr>
+						<tr><td>9</td><td>奔驰</td><td><span>19127845</span><div class="progress-bar"><div class="degree-normal" style="width:35%"></div></div></td></tr>
+						<tr><td>10</td><td>别克</td><td><span>18544679</span><div class="progress-bar"><div class="degree-normal" style="width:30%"></div></div></td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
