@@ -48,3 +48,8 @@
 
 * 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/11/
 * Demo地址：http://bdSpring.github.io/zhou-task01/11/index.html
+
+任务十二：学习CSS 3的新特性
+
+* 代码地址：https://github.com/bdSpring/zhou-task01/blob/master/12/
+* Demo地址：http://bdSpring.github.io/zhou-task01/12/index.html
