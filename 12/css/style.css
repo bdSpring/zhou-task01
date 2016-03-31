@@ -1,0 +1,87 @@
+
+body {
+	font-family: "微软雅黑";
+}
+.rank {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.rank tr {
+	text-align: left;
+}
+.rank tr:first-of-type {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+.rank tr:nth-child(2),
+.rank tr:nth-child(3),
+.rank tr:nth-child(4) {
+	color: #F94246;
+}
+.rank tr:nth-child(2n+3) { 
+	background:#CCCCCE;
+}
+
+.input-box {
+	margin-top: 50px;
+	margin-left: 20px;
+	width: 100px;
+	transition: width 2s;
+	-moz-transition: width 2s;	/* Firefox 4 */
+	-webkit-transition: width 2s;	/* Safari 和 Chrome */
+	-o-transition: width 2s;
+}
+.input-box:focus {
+	width: 200px;
+}
+.container {
+	position: relative;
+	margin-top: 50px;
+	margin-left: 20px;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+}
+.container .wrap {
+	position: absolute;
+	width: 300%;
+	transition: all 1s; 
+}
+.container section {
+	float: left;
+	width: 300px;
+	height: 200px;
+}
+.container section:nth-child(1) {
+	background-color: red;
+}
+.container section:nth-child(2) {
+	background-color: yellow;
+}
+.container section:nth-child(3) {
+	background-color: blue;
+}
+.container nav {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.container nav a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	opacity: .7;
+	text-align: center;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+#div1:target~.wrap {
+	left: 0;
+}
+#div2:target~.wrap {
+	left: -100%;
+}
+#div3:target~.wrap {
+	left: -200%;
+}
